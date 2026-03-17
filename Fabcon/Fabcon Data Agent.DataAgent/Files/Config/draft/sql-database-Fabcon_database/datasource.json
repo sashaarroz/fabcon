@@ -1,0 +1,1506 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "0dad30db-0eef-aa6f-456c-94238b0c1819",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": null,
+  "displayName": "Fabcon_database",
+  "type": "sql_database",
+  "userDescription": null,
+  "metadata": null,
+  "elements": [
+    {
+      "id": "31a322ce-c2e8-4294-95bd-1d8c7dd3f611",
+      "is_selected": false,
+      "display_name": "dbo",
+      "type": "sql_database.schema",
+      "description": null,
+      "children": [
+        {
+          "id": "246971a2-0e88-4eb5-ba77-0f84cd8d78f8",
+          "is_selected": false,
+          "display_name": "BuildVersion",
+          "type": "sql_database.table",
+          "description": null,
+          "children": [
+            {
+              "id": "d6aeb359-2695-4643-9cb3-3c3dab64ee1d",
+              "is_selected": true,
+              "display_name": "DatabaseVersion",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "3a44129d-a195-48f4-bc4a-bdd93d5c9973",
+              "is_selected": true,
+              "display_name": "ModifiedDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "c29a7d60-81ab-4b8a-8fe0-32b8114def4b",
+              "is_selected": true,
+              "display_name": "SystemInformationID",
+              "type": "sql_database.column",
+              "data_type": "smallint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "744bcc80-9690-45a5-a715-aaaa97f2a49c",
+              "is_selected": true,
+              "display_name": "VersionDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "8bff2c09-c271-47ab-aa6b-258c64ab83f8",
+          "is_selected": false,
+          "display_name": "ErrorLog",
+          "type": "sql_database.table",
+          "description": null,
+          "children": [
+            {
+              "id": "c8566274-a484-4e9f-91b2-e3437312cf78",
+              "is_selected": true,
+              "display_name": "ErrorLine",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "077a6738-b6f6-4264-9083-07fae2b1967c",
+              "is_selected": true,
+              "display_name": "ErrorLogID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "5bf3ae79-a645-4a40-b578-7df28dd8ac3d",
+              "is_selected": true,
+              "display_name": "ErrorMessage",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "578d5a8e-a8b7-4759-819f-3580f1fe997d",
+              "is_selected": true,
+              "display_name": "ErrorNumber",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d5d2aaec-9176-4c74-9dfb-45d24be35f8e",
+              "is_selected": true,
+              "display_name": "ErrorProcedure",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "102770df-fd13-4a85-83ee-319fdae49957",
+              "is_selected": true,
+              "display_name": "ErrorSeverity",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b0320546-d2db-4013-8ac7-bd35f8d9662f",
+              "is_selected": true,
+              "display_name": "ErrorState",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b3da5479-40e8-4eb3-bec0-a58a72299729",
+              "is_selected": true,
+              "display_name": "ErrorTime",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "80cc7981-7600-4546-bed8-3cf59fa045d6",
+              "is_selected": true,
+              "display_name": "UserName",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f3c576b8-9020-4e1f-8e29-c0057c616f03",
+      "is_selected": false,
+      "display_name": "SalesLT",
+      "type": "sql_database.schema",
+      "description": null,
+      "children": [
+        {
+          "id": "8c24fa59-9607-490c-982a-2c5bc5f68b55",
+          "is_selected": false,
+          "display_name": "Address",
+          "type": "sql_database.table",
+          "description": null,
+          "children": [
+            {
+              "id": "6008a48c-abff-43bb-9790-94c4cb01c0ea",
+              "is_selected": true,
+              "display_name": "AddressID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9c12a4ae-d05b-4311-9cfa-543a33229f92",
+              "is_selected": true,
+              "display_name": "AddressLine1",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "66e341e6-f102-4503-b543-e1d44ddede82",
+              "is_selected": true,
+              "display_name": "AddressLine2",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ec4a99cf-94b4-4e48-99f4-7b7a5de3a1c3",
+              "is_selected": true,
+              "display_name": "City",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "333dcc22-fe0d-43d0-9d2f-11461d286a6f",
+              "is_selected": true,
+              "display_name": "CountryRegion",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "7e494e3f-d300-4df1-a62d-3de5959e236a",
+              "is_selected": true,
+              "display_name": "ModifiedDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "2d5ff659-8543-4e8f-b493-0f89c5cdc1dd",
+              "is_selected": true,
+              "display_name": "PostalCode",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "77db1a99-66a0-4802-8007-f8017315dd0c",
+              "is_selected": true,
+              "display_name": "rowguid",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "4fe59078-1696-46f3-93f2-0f7f787e51a6",
+              "is_selected": true,
+              "display_name": "StateProvince",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "1ad0f0b9-d4a2-4526-98de-ebe812bd18fc",
+          "is_selected": false,
+          "display_name": "Customer",
+          "type": "sql_database.table",
+          "description": null,
+          "children": [
+            {
+              "id": "e79195ce-c745-4d81-b8ba-f2affa68718c",
+              "is_selected": true,
+              "display_name": "CompanyName",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "34634b41-dce9-4837-b947-595ee68985d0",
+              "is_selected": true,
+              "display_name": "CustomerID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "1d0231f1-31cd-4b39-ae74-b9e5fbe3a74b",
+              "is_selected": true,
+              "display_name": "EmailAddress",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "1b55f67f-d3ea-4a63-8128-36f7a8659e2d",
+              "is_selected": true,
+              "display_name": "FirstName",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "5ae515a8-8aff-4ce8-884b-5bd1ce964a78",
+              "is_selected": true,
+              "display_name": "LastName",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e7ff967a-cf3b-45e5-ab0b-19fd6d0b0b0d",
+              "is_selected": true,
+              "display_name": "MiddleName",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "037438ac-a667-4214-bc9f-96e8d43436a7",
+              "is_selected": true,
+              "display_name": "ModifiedDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d258e597-72c7-4143-9909-03c43531283d",
+              "is_selected": true,
+              "display_name": "NameStyle",
+              "type": "sql_database.column",
+              "data_type": "bit",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "c09cec1b-d71b-41a8-a522-d00bd0f9cb1e",
+              "is_selected": true,
+              "display_name": "PasswordHash",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e9d1a1e1-6bfc-4aff-bc03-50c9a7bdfe1a",
+              "is_selected": true,
+              "display_name": "PasswordSalt",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "55207770-b5ac-4e78-a2c6-b406bf622f18",
+              "is_selected": true,
+              "display_name": "Phone",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0eb3df27-0f81-47e3-98a9-824ea64d4f14",
+              "is_selected": true,
+              "display_name": "rowguid",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "5482b6f8-6b73-45f0-b316-5a104ca3cc18",
+              "is_selected": true,
+              "display_name": "SalesPerson",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0d38b828-9aed-4ac0-8dc9-e52cbb897881",
+              "is_selected": true,
+              "display_name": "Suffix",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "19cc857a-5c9b-4935-afca-8190645f07ed",
+              "is_selected": true,
+              "display_name": "Title",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "0d0a4ee3-15d3-46c3-a593-034d6ce94362",
+          "is_selected": false,
+          "display_name": "CustomerAddress",
+          "type": "sql_database.table",
+          "description": null,
+          "children": [
+            {
+              "id": "94bc8d4a-b522-45ae-8951-ce7f2bac404e",
+              "is_selected": true,
+              "display_name": "AddressID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "a4501e9a-05ca-4605-8372-c781b6632a3c",
+              "is_selected": true,
+              "display_name": "AddressType",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b49304a2-f894-4f39-b561-81d67f23c69a",
+              "is_selected": true,
+              "display_name": "CustomerID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b25d788c-489e-4ebc-a987-694e3bcd058d",
+              "is_selected": true,
+              "display_name": "ModifiedDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "05d90c3a-e243-4f27-839e-a328a99ea539",
+              "is_selected": true,
+              "display_name": "rowguid",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "1957c79d-96ac-4b2c-b1c0-c41f7348b77e",
+          "is_selected": true,
+          "display_name": "Product",
+          "type": "sql_database.table",
+          "description": null,
+          "children": [
+            {
+              "id": "ddb82581-3e56-4bba-ab69-0984fe6bb3e5",
+              "is_selected": true,
+              "display_name": "chunk",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "78e43c1b-bfbe-4b54-a753-6da1090fdc0f",
+              "is_selected": true,
+              "display_name": "Color",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "c1dd52d5-bd3c-4a3b-b434-2f5d95282edc",
+              "is_selected": true,
+              "display_name": "DiscontinuedDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6aec63e1-8f27-4047-9471-c7a0839b6edb",
+              "is_selected": true,
+              "display_name": "ListPrice",
+              "type": "sql_database.column",
+              "data_type": "decimal",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b7147a98-f0d9-45d1-bf6b-d235d5610bba",
+              "is_selected": true,
+              "display_name": "ModifiedDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ca91fa08-a3f1-4632-a332-700f7d6da0c0",
+              "is_selected": true,
+              "display_name": "Name",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "18872639-8541-4e30-8085-f32ff9de059e",
+              "is_selected": true,
+              "display_name": "ProductCategoryID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "bf3d57b5-0411-4451-94e2-ed11ab3f5aea",
+              "is_selected": true,
+              "display_name": "ProductID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9c58e1a0-3687-45aa-a48f-c7b0da6f4977",
+              "is_selected": true,
+              "display_name": "ProductModelID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "3f1a44a3-a1f7-4aaa-863d-c9bfa37833f1",
+              "is_selected": true,
+              "display_name": "ProductNumber",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "a738fabd-2f2f-4264-9b6a-a242ae66d026",
+              "is_selected": true,
+              "display_name": "rowguid",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ee5e6a3c-0918-492e-a97e-4a88dcff55d6",
+              "is_selected": true,
+              "display_name": "SellEndDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "79684060-509b-4735-877a-d343bdff9f55",
+              "is_selected": true,
+              "display_name": "SellStartDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "90052d79-6b28-4f29-b48a-72613167f7a1",
+              "is_selected": true,
+              "display_name": "Size",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "f3212e0e-e460-4161-b5d0-dd71a9c0a13c",
+              "is_selected": true,
+              "display_name": "StandardCost",
+              "type": "sql_database.column",
+              "data_type": "decimal",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "1b87d545-856c-4d33-a865-17c45a322427",
+              "is_selected": true,
+              "display_name": "ThumbNailPhoto",
+              "type": "sql_database.column",
+              "data_type": "varbinary",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "23023dab-15ef-4f81-ade8-9f170c59f2ee",
+              "is_selected": true,
+              "display_name": "ThumbnailPhotoFileName",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b86eac38-ecf7-4859-8c38-485c22973711",
+              "is_selected": true,
+              "display_name": "Weight",
+              "type": "sql_database.column",
+              "data_type": "decimal",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "4be0a738-31d2-42b2-9606-eb8b1fb93bdc",
+          "is_selected": true,
+          "display_name": "ProductCategory",
+          "type": "sql_database.table",
+          "description": null,
+          "children": [
+            {
+              "id": "70fda554-f11a-46d1-bc17-4cae599f3ff7",
+              "is_selected": true,
+              "display_name": "ModifiedDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "7eeff51d-98e5-4df3-bb7a-d75240ef3859",
+              "is_selected": true,
+              "display_name": "Name",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "c54f7cf5-26d7-4ebb-802b-ac8f160492cd",
+              "is_selected": true,
+              "display_name": "ParentProductCategoryID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0dc227ca-b915-4f67-8fb6-08953a89a466",
+              "is_selected": true,
+              "display_name": "ProductCategoryID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "2c09fb1a-7877-4f85-bb20-43f583b85510",
+              "is_selected": true,
+              "display_name": "rowguid",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "573da5f0-48e1-4ffd-b80c-97d51a125b7c",
+          "is_selected": true,
+          "display_name": "ProductDescription",
+          "type": "sql_database.table",
+          "description": null,
+          "children": [
+            {
+              "id": "5ba59689-dd3b-47ff-a171-c4fc68b4f4a2",
+              "is_selected": true,
+              "display_name": "Description",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "caab2a3d-75e1-42dd-ac51-63e0796350ad",
+              "is_selected": true,
+              "display_name": "ModifiedDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6013f34b-ea85-44c0-aa75-a321d14d865d",
+              "is_selected": true,
+              "display_name": "ProductDescriptionID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0e97c3cd-da14-4360-b812-29a6c5c53516",
+              "is_selected": true,
+              "display_name": "rowguid",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "5144f2ad-575a-42f6-840a-e99dab41be68",
+          "is_selected": true,
+          "display_name": "ProductModel",
+          "type": "sql_database.table",
+          "description": null,
+          "children": [
+            {
+              "id": "ece77ccd-5591-4951-9572-2bf23a6cc3b2",
+              "is_selected": true,
+              "display_name": "ModifiedDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b9737759-4801-448e-bc32-50c8b7dcd934",
+              "is_selected": true,
+              "display_name": "Name",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b0674fa9-0b4a-441c-a7ce-385d1f04bdf3",
+              "is_selected": true,
+              "display_name": "ProductModelID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6ce251a6-1810-49c1-b244-fbf4dce30cc4",
+              "is_selected": true,
+              "display_name": "rowguid",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "e8dc37b9-814d-42b1-9ad5-3bd280c07903",
+          "is_selected": false,
+          "display_name": "ProductModelProductDescription",
+          "type": "sql_database.table",
+          "description": null,
+          "children": [
+            {
+              "id": "6cf2f5f8-4658-4da4-93d4-307af58575a1",
+              "is_selected": true,
+              "display_name": "Culture",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "90732464-e110-43bc-a705-9f2345f60c56",
+              "is_selected": true,
+              "display_name": "ModifiedDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "75c4115d-e2cc-4a73-8a91-828254b36fb8",
+              "is_selected": true,
+              "display_name": "ProductDescriptionID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "49e8b179-3253-4c48-9459-5dd136d81343",
+              "is_selected": true,
+              "display_name": "ProductModelID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "27adf66c-4f2e-4971-880a-b05371d8fcbf",
+              "is_selected": true,
+              "display_name": "rowguid",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "f67596b3-77b8-48b0-949a-8daaade6374f",
+          "is_selected": true,
+          "display_name": "SalesOrderDetail",
+          "type": "sql_database.table",
+          "description": null,
+          "children": [
+            {
+              "id": "3efd61c3-1174-499d-b286-8df76c085b4d",
+              "is_selected": true,
+              "display_name": "ModifiedDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "5f1cb482-a85a-4283-9762-dc4572cfed0d",
+              "is_selected": true,
+              "display_name": "OrderQty",
+              "type": "sql_database.column",
+              "data_type": "smallint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "38f87438-97c0-4176-9545-643870f21438",
+              "is_selected": true,
+              "display_name": "ProductID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "654f95d3-efe8-45b6-b000-d5842e6099bf",
+              "is_selected": true,
+              "display_name": "rowguid",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "7c5a372e-c92d-4d93-8965-5735213f3145",
+              "is_selected": true,
+              "display_name": "SalesOrderDetailID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "596f804a-409a-4cc2-b1eb-cdd4dbc0282a",
+              "is_selected": true,
+              "display_name": "SalesOrderID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "45291eb8-ea97-445d-8398-8dcbda5724f5",
+              "is_selected": true,
+              "display_name": "UnitPrice",
+              "type": "sql_database.column",
+              "data_type": "decimal",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9ab7d115-a869-408a-91a9-ec23e33fee01",
+              "is_selected": true,
+              "display_name": "UnitPriceDiscount",
+              "type": "sql_database.column",
+              "data_type": "decimal",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "17215bc6-848b-46d2-8240-77d03214396a",
+          "is_selected": false,
+          "display_name": "SalesOrderHeader",
+          "type": "sql_database.table",
+          "description": null,
+          "children": [
+            {
+              "id": "05bc607f-78a2-4324-b9ee-cc613e68f4a0",
+              "is_selected": true,
+              "display_name": "AccountNumber",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0e44e355-3acb-40d5-a176-dcfb3f08b14c",
+              "is_selected": true,
+              "display_name": "BillToAddressID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "853c6dea-ca49-4f97-9b0f-21a6f60b3365",
+              "is_selected": true,
+              "display_name": "Comment",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e3a6b549-f793-4711-a026-e010a39bc65c",
+              "is_selected": true,
+              "display_name": "CreditCardApprovalCode",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "cc34b7e5-eaf9-40a9-bbc0-0fb6c2e71c0d",
+              "is_selected": true,
+              "display_name": "CustomerID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "678a7ad8-437f-400b-8b29-09affa4df2f7",
+              "is_selected": true,
+              "display_name": "DueDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d0e67c88-bae0-4a83-8b10-d2bdc5505e14",
+              "is_selected": true,
+              "display_name": "Freight",
+              "type": "sql_database.column",
+              "data_type": "decimal",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6196c7a5-2396-41c3-b6da-523984299c23",
+              "is_selected": true,
+              "display_name": "ModifiedDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "bf06142f-d975-442a-b711-164d9b9c7370",
+              "is_selected": true,
+              "display_name": "OnlineOrderFlag",
+              "type": "sql_database.column",
+              "data_type": "bit",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "38b3233b-b366-4d4c-806e-bf85a7836fc9",
+              "is_selected": true,
+              "display_name": "OrderDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "147f4fb0-6b14-4f0d-96d5-d24aa85f6834",
+              "is_selected": true,
+              "display_name": "PurchaseOrderNumber",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "4c621e27-6515-44f2-a966-6d6de8f7197b",
+              "is_selected": true,
+              "display_name": "RevisionNumber",
+              "type": "sql_database.column",
+              "data_type": "smallint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "c98450e3-8920-4d56-97ce-82e648a4a835",
+              "is_selected": true,
+              "display_name": "rowguid",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e641476c-da7a-46a3-b48c-8d8edf021647",
+              "is_selected": true,
+              "display_name": "SalesOrderID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "62408f73-7d08-4a19-98ae-1bec6a65592c",
+              "is_selected": true,
+              "display_name": "ShipDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "593e66b7-77e0-4c48-bc16-1ec53ce23c89",
+              "is_selected": true,
+              "display_name": "ShipMethod",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "24d5560e-6ea9-43ec-bfe8-1d16e838c15d",
+              "is_selected": true,
+              "display_name": "ShipToAddressID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "8aa7a541-08ca-494b-9834-7f47c91201cf",
+              "is_selected": true,
+              "display_name": "Status",
+              "type": "sql_database.column",
+              "data_type": "smallint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "19645b56-e8ef-4811-a8d2-57e781d54f13",
+              "is_selected": true,
+              "display_name": "SubTotal",
+              "type": "sql_database.column",
+              "data_type": "decimal",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "97801cb8-5ada-417a-a808-b732e06eed65",
+              "is_selected": true,
+              "display_name": "TaxAmt",
+              "type": "sql_database.column",
+              "data_type": "decimal",
+              "description": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ef883939-c63e-444c-a4b8-1326d4294931",
+      "is_selected": false,
+      "display_name": "SupplyChain",
+      "type": "sql_database.schema",
+      "description": null,
+      "children": [
+        {
+          "id": "1d461c56-a1b1-44da-a416-5b3f9ed032f3",
+          "is_selected": false,
+          "display_name": "InventoryTransactions",
+          "type": "sql_database.table",
+          "description": null,
+          "children": [
+            {
+              "id": "3ccfebc1-445d-4d2e-b1a9-68dd777e0a9b",
+              "is_selected": true,
+              "display_name": "InventoryTransactionID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "171d8ea6-27c5-42f1-a83f-36bfd47b2316",
+              "is_selected": true,
+              "display_name": "ProductID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6e010c02-e9d9-422e-968a-fa0300261972",
+              "is_selected": true,
+              "display_name": "Quantity",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "a5d1f48c-43be-483e-a45e-f4b85a9933be",
+              "is_selected": true,
+              "display_name": "ReferenceID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "f6ef0320-d377-417f-b520-5d1d93d57a67",
+              "is_selected": true,
+              "display_name": "TransactionDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "c08feb4a-65a3-4cdb-ba04-a867a8a8e9ee",
+              "is_selected": true,
+              "display_name": "TransactionType",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "8e714e91-d20b-429a-8391-73613aceefbf",
+              "is_selected": true,
+              "display_name": "WarehouseID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "a8708059-45c7-458f-826b-46a1cf5b3b2e",
+          "is_selected": false,
+          "display_name": "PurchaseOrderLines",
+          "type": "sql_database.table",
+          "description": null,
+          "children": [
+            {
+              "id": "bee6644c-bc5c-41b8-8330-dd5942d2cb30",
+              "is_selected": true,
+              "display_name": "OrderedQuantity",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "779a6fd5-b1cb-4bda-956c-285ee88524f3",
+              "is_selected": true,
+              "display_name": "ProductID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "daa884ec-fc7c-41d9-a007-f84cc413bd00",
+              "is_selected": true,
+              "display_name": "PurchaseOrderID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "7a11ade5-eb83-451a-a14c-f95762dfc23d",
+              "is_selected": true,
+              "display_name": "PurchaseOrderLineID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "bce26ab3-960a-4062-9a62-867b2e8ade08",
+              "is_selected": true,
+              "display_name": "UnitCost",
+              "type": "sql_database.column",
+              "data_type": "decimal",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "7a83ba56-3d58-4701-8949-fedcdac943be",
+          "is_selected": false,
+          "display_name": "PurchaseOrders",
+          "type": "sql_database.table",
+          "description": null,
+          "children": [
+            {
+              "id": "885cf3ff-acc1-47f4-a11b-601827d37de6",
+              "is_selected": true,
+              "display_name": "ExpectedDeliveryDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "82f3d4ef-589b-45b2-92fb-4a1997981462",
+              "is_selected": true,
+              "display_name": "OrderDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "09ac054b-62d8-46f3-8bc0-bba6315ec91b",
+              "is_selected": true,
+              "display_name": "PurchaseOrderID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "94ea78a0-7a5c-4075-a131-5004f5832bcc",
+              "is_selected": true,
+              "display_name": "Status",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "5ac43c25-2c25-484f-83d8-d74fe3f11ffd",
+              "is_selected": true,
+              "display_name": "SupplierID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "456f1cc0-fc8d-4431-923f-2da81d517d46",
+              "is_selected": true,
+              "display_name": "TotalAmount",
+              "type": "sql_database.column",
+              "data_type": "decimal",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "f0890964-b5be-45bd-b61a-e86b44e81b53",
+          "is_selected": false,
+          "display_name": "SupplierPerformance",
+          "type": "sql_database.table",
+          "description": null,
+          "children": [
+            {
+              "id": "be63969e-97ad-4812-a028-1bf1d15c23eb",
+              "is_selected": true,
+              "display_name": "AIInsight",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "f3cae663-54d9-4b28-aa40-0fdcfa75a571",
+              "is_selected": true,
+              "display_name": "AverageLeadTimeDays",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "c69899a3-36fe-42b7-98d2-32e141471bd6",
+              "is_selected": true,
+              "display_name": "EvaluationDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "06d63744-bc8d-4412-b410-5c80968ac2ca",
+              "is_selected": true,
+              "display_name": "OnTimeDeliveryRate",
+              "type": "sql_database.column",
+              "data_type": "decimal",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "20cf3748-ccd9-49c4-825f-c1b01cc7b6a7",
+              "is_selected": true,
+              "display_name": "QualityScore",
+              "type": "sql_database.column",
+              "data_type": "decimal",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "4dfae951-59c1-4a95-a501-b69b0d8e3439",
+              "is_selected": true,
+              "display_name": "RiskScore",
+              "type": "sql_database.column",
+              "data_type": "decimal",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "cc2e9f3c-99f2-4e9f-9026-f7c23be74ec6",
+              "is_selected": true,
+              "display_name": "SupplierID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ca3505b3-8783-48c2-969e-abcc4e00cd82",
+              "is_selected": true,
+              "display_name": "SupplierPerformanceID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "e8bb40d1-d3a8-429d-9a04-86b6670fb288",
+          "is_selected": false,
+          "display_name": "Suppliers",
+          "type": "sql_database.table",
+          "description": null,
+          "children": [
+            {
+              "id": "ca3c5f2b-5c91-4ccc-abfa-655e94424141",
+              "is_selected": true,
+              "display_name": "ContactName",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6815eb08-8404-4441-9d7a-20d43186de80",
+              "is_selected": true,
+              "display_name": "CreatedDate",
+              "type": "sql_database.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "fc8d9b80-8b45-4039-9a85-963e50608e46",
+              "is_selected": true,
+              "display_name": "Email",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "696a8847-dfd6-4914-8ce0-ff5301c523d0",
+              "is_selected": true,
+              "display_name": "IsActive",
+              "type": "sql_database.column",
+              "data_type": "bit",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "59685b77-95a2-48a2-aa92-e2d77489739c",
+              "is_selected": true,
+              "display_name": "Phone",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6251c138-dc38-4a25-86d2-90419cf66d42",
+              "is_selected": true,
+              "display_name": "SupplierID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "73d0dd3e-af5c-4620-a738-db29b8089b49",
+              "is_selected": true,
+              "display_name": "SupplierLocationID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9c7ce427-0ec1-4352-96d1-e265273e9cbb",
+              "is_selected": true,
+              "display_name": "SupplierName",
+              "type": "sql_database.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "f6108db2-3cbc-4529-b654-4c505b4c2911",
+          "is_selected": false,
+          "display_name": "Warehouse",
+          "type": "sql_database.table",
+          "description": null,
+          "children": [
+            {
+              "id": "8153b693-4357-47e6-934b-580302c2c0c1",
+              "is_selected": true,
+              "display_name": "ComponentID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "158925f4-cc97-4366-8f87-e15b09e89313",
+              "is_selected": true,
+              "display_name": "ProductID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "89daf02f-cf94-42e1-bde1-c7d4634230e8",
+              "is_selected": true,
+              "display_name": "QuantityOnHand",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "24ce4188-5368-4d7c-aea2-dff94a330aa5",
+              "is_selected": true,
+              "display_name": "SupplierID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "3beea8a0-cf69-4892-9307-f01b85c01c42",
+              "is_selected": true,
+              "display_name": "SupplierLocationID",
+              "type": "sql_database.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

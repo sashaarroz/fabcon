@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/graphqlApi/definition/1.0.0/schema.json",
+  "datasources": [
+    {
+      "objects": [
+        {
+          "IsStoredProcedureQueryNode": true,
+          "actions": {
+            "Execute": "Enabled"
+          },
+          "fieldMappings": {},
+          "graphqlType": "find_products_chat_api",
+          "relationships": [],
+          "sourceObject": "SalesLT.find_products_chat_api",
+          "sourceObjectType": "StoredProcedure"
+        }
+      ],
+      "sourceItemId": "0dad30db-0eef-aa6f-456c-94238b0c1819",
+      "sourceType": "SqlDbNative",
+      "sourceWorkspaceId": "00000000-0000-0000-0000-000000000000"
+    }
+  ]
+}

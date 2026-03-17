@@ -1,0 +1,69 @@
+table PurchaseOrderLines
+	lineageTag: 8633fc59-7d64-41ad-9bc6-d61b7f28951d
+	sourceLineageTag: [SupplyChain].[PurchaseOrderLines]
+
+	column PurchaseOrderLineID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 44cbdfe5-0d41-4a13-976f-d603d5189afa
+		sourceLineageTag: PurchaseOrderLineID
+		summarizeBy: count
+		sourceColumn: PurchaseOrderLineID
+
+		annotation SummarizationSetBy = Automatic
+
+	column PurchaseOrderID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 4195c664-47aa-4ca6-b3b4-5935ade71049
+		sourceLineageTag: PurchaseOrderID
+		summarizeBy: count
+		sourceColumn: PurchaseOrderID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: b12a8bc7-7876-479a-96f5-4eefc5283709
+		sourceLineageTag: ProductID
+		summarizeBy: count
+		sourceColumn: ProductID
+
+		annotation SummarizationSetBy = Automatic
+
+	column OrderedQuantity
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 0b678c67-d1e7-447f-be2f-677b9c21dca8
+		sourceLineageTag: OrderedQuantity
+		summarizeBy: sum
+		sourceColumn: OrderedQuantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column UnitCost
+		dataType: double
+		sourceProviderType: decimal(18, 2)
+		lineageTag: 77126ac8-85d2-4bba-92a5-098d1aee81f3
+		sourceLineageTag: UnitCost
+		summarizeBy: sum
+		sourceColumn: UnitCost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition PurchaseOrderLines = entity
+		mode: directLake
+		source
+			entityName: PurchaseOrderLines
+			schemaName: SupplyChain
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

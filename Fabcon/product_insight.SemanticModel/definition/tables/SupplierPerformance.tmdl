@@ -1,0 +1,106 @@
+table SupplierPerformance
+	lineageTag: 43f50c1d-378b-41ba-b69a-b53e75cffab0
+	sourceLineageTag: [SupplyChain].[SupplierPerformance]
+
+	column SupplierPerformanceID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: e4a8cccd-61c2-4efd-997d-0edc19c2f26a
+		sourceLineageTag: SupplierPerformanceID
+		summarizeBy: count
+		sourceColumn: SupplierPerformanceID
+
+		annotation SummarizationSetBy = Automatic
+
+	column SupplierID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 4a553b3e-0d63-4db6-9ec6-8279287ee9a5
+		sourceLineageTag: SupplierID
+		summarizeBy: count
+		sourceColumn: SupplierID
+
+		annotation SummarizationSetBy = Automatic
+
+	column EvaluationDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 5fc96bd4-8c8d-4ebc-a507-b7582813f586
+		sourceLineageTag: EvaluationDate
+		summarizeBy: none
+		sourceColumn: EvaluationDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column OnTimeDeliveryRate
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(5, 2)
+		lineageTag: 4fe96089-8982-4f68-a03b-c082b87b41e4
+		sourceLineageTag: OnTimeDeliveryRate
+		summarizeBy: sum
+		sourceColumn: OnTimeDeliveryRate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column QualityScore
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(5, 2)
+		lineageTag: ac6c9ac1-9aff-4d20-bc2b-964039dad623
+		sourceLineageTag: QualityScore
+		summarizeBy: sum
+		sourceColumn: QualityScore
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column AverageLeadTimeDays
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 0ba574b1-0000-475b-af93-066ec7cc0186
+		sourceLineageTag: AverageLeadTimeDays
+		summarizeBy: sum
+		sourceColumn: AverageLeadTimeDays
+
+		annotation SummarizationSetBy = Automatic
+
+	column RiskScore
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(5, 2)
+		lineageTag: 8380b6ef-e997-40c5-8a2d-f6ab70b3ad6a
+		sourceLineageTag: RiskScore
+		summarizeBy: sum
+		sourceColumn: RiskScore
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column AIInsight
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 5f0b2941-1a73-40d9-bd1c-a520475656a7
+		sourceLineageTag: AIInsight
+		summarizeBy: none
+		sourceColumn: AIInsight
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SupplierPerformance = entity
+		mode: directLake
+		source
+			entityName: SupplierPerformance
+			schemaName: SupplyChain
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

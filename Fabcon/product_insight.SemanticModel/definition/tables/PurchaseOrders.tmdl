@@ -1,0 +1,79 @@
+table PurchaseOrders
+	lineageTag: c64a0027-7f15-4cf2-986a-c520dc4ba35a
+	sourceLineageTag: [SupplyChain].[PurchaseOrders]
+
+	column PurchaseOrderID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 66fe7091-371f-45d7-93b3-97b4145d8270
+		sourceLineageTag: PurchaseOrderID
+		summarizeBy: count
+		sourceColumn: PurchaseOrderID
+
+		annotation SummarizationSetBy = Automatic
+
+	column SupplierID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: d7cf1660-4da7-48c1-9ad8-2b5feebfc136
+		sourceLineageTag: SupplierID
+		summarizeBy: count
+		sourceColumn: SupplierID
+
+		annotation SummarizationSetBy = Automatic
+
+	column OrderDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: f814b706-04ae-4ace-8a0b-ddd701eb5cb1
+		sourceLineageTag: OrderDate
+		summarizeBy: none
+		sourceColumn: OrderDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column ExpectedDeliveryDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 233fd7bd-cdb6-4e7b-ada9-71ae6d134700
+		sourceLineageTag: ExpectedDeliveryDate
+		summarizeBy: none
+		sourceColumn: ExpectedDeliveryDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 1a4f3fa3-c9f5-4d1c-9e71-5925ff4eb37d
+		sourceLineageTag: Status
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalAmount
+		dataType: double
+		sourceProviderType: decimal(18, 2)
+		lineageTag: 8a7ba81a-33ef-4cb4-b281-a0e45f6d2ca7
+		sourceLineageTag: TotalAmount
+		summarizeBy: sum
+		sourceColumn: TotalAmount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition PurchaseOrders = entity
+		mode: directLake
+		source
+			entityName: PurchaseOrders
+			schemaName: SupplyChain
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

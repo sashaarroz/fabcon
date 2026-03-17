@@ -1,0 +1,5 @@
+SELECT TOP (1000) [ProductDescriptionID]
+      ,[Description]
+      ,[rowguid]
+      ,[ModifiedDate]
+  FROM [SalesLT].[ProductDescription]

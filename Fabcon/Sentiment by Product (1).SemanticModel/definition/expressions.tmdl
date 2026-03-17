@@ -1,0 +1,14 @@
+expression ServerName = "hoccp5nfswhetnwu5cevxgawyy-od34en5ssqjuxiucwsset2ngvq.database.fabric.microsoft.com,1433" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 31e7e9d5-1bef-4a98-a265-504306d2239b
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+expression DatabaseName = "Fabcon_database-8b0c1819-9423-456c-aa6f-0eef0dad30db" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 4073f2f0-905c-4838-9141-09d753641f35
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+

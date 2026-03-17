@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Sentiment by Product (1)"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "1511b9e5-557b-a095-408e-e936c1e4bb0c"
+  }
+}
